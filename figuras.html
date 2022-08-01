@@ -45,8 +45,47 @@
             <button  type="button" onclick="calcularPerimetroTriangulo()">
                 Calcular el perímetro	Triangulo
             </button>
-            
         </form>
+        <h1>Calcular el area de un triangulo</h1>
+
+        <form>
+            <label for="BaseTri">
+                Escribe la base del Triangulo
+            </label>
+            <input id="BaseTri" type="number"  />
+            <label for="AlturaTri">
+                Escribe cuánto mide la altura del Triangulo
+            </label>
+            <input id="AlturaTri" type="number"  />
+            
+            <button  type="button" onclick="calcularAreaTriangulo()">
+                Calcular el Area del Triangulo
+            </button>
+        </form> 
+        <h1>perimetro de la circunferencia</h1>
+
+        <form>
+            <label for="diametroCircun">
+                Escribe el diametro de la circunferencia
+            </label>
+            <input id="diametroCircun" type="number"  />
+            <button  type="button" onclick="calcularDiametroCircu()">
+                Calcular perímetro de la circunferencia
+            </button>
+        </form> 
+
+        <h1>Area del Circulo</h1>
+
+        <form>
+            <label for="radioCircu">
+                Escribe el Radio del circulo
+            </label>
+            <input id="radioCircu" type="number"  />
+            <button  type="button" onclick="calcularAreaCircu()">
+                Calcular Area de la circunferencia
+            </button>
+        </form> 
+
     </section>
     <script src="./figuras.js">
     </script>

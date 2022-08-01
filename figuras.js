@@ -26,9 +26,9 @@ const base = 4 */
                                               +"," + base + ","
                                               + " altura del triangulo es de " + alturaTriangulo) */
 
-function perimetroTriangulo(lado1, lado2, base){
-    total = lado1+lado2+base;
-    return  total;
+function perimetroTriangulo( lado1,lado2, base){
+    total = (lado1 + lado2 + base)
+    return total
 } 
 // console.log("El perimetro del triangulo es igual a " + perimetroTriangulo)
 function areaTriangulo (base, alturaTriangulo){
@@ -51,7 +51,7 @@ function perimetroCirculo(diametro){
 // console.log("El perimetro del circulo es de: " + perimetroCirculo)
 
 function areaCirculo(radio){
-    ((radio*radio)*pi)
+   return  ((radio*radio)*pi)
 }
 // console.log("El area del Circulo es de: " +areaCirculo)
 console.groupEnd();
@@ -84,9 +84,32 @@ function calcularPerimetroTriangulo(){
     const value2 = input2.value;
     const input3 = document.getElementById("InputLado3");
     const value3 = input3.value;
-    const perimetroTrian = perimetroTriangulo(value1,value2,value3);
+    const perimetroTrian = perimetroTriangulo(Number(value1),Number(value2),Number(value3));
     alert(perimetroTrian);
 
+}
+
+function calcularAreaTriangulo(){
+    const BaseTri = document.getElementById("BaseTri");
+    const BaseTri1 = BaseTri.value;
+    const AlturaTri = document.getElementById("AlturaTri");
+    const AlturaTri1 = AlturaTri.value;
+    const areaTrianguloFin = areaTriangulo(Number(BaseTri1),Number(AlturaTri1));
+    alert (areaTrianguloFin)
+}
+
+function calcularDiametroCircu(){
+    const diametroCircun = document.getElementById("diametroCircun")
+    const diametroCircun1 = diametroCircun.value;
+    const diameCircunt = perimetroCirculo(Number(diametroCircun1))
+    alert (diameCircunt)
+}
+
+function calcularAreaCircu(){
+    const radioCircu = document.getElementById("radioCircu")
+    const radioCircu1 = radioCircu.value;
+    const areaCirculoFin = areaCirculo(Number(radioCircu1))
+    alert (areaCirculoFin)
 }
 
 
